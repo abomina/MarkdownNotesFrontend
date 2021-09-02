@@ -1,0 +1,12 @@
+<mat-card>
+    <mat-card-content>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <h2>Crear nueva nota</h2>
+            <mat-form-field class="full-width-input">
+                <mat-label>Texto</mat-label>
+                <textarea matInput formControlName="texto" required></textarea>
+            </mat-form-field>
+            <button mat-raised-button color="primary">Crear</button>
+        </form>
+    </mat-card-content>
+</mat-card>
